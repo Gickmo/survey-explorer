@@ -26,7 +26,7 @@ if not st.session_state["authenticated"]:
     if login_button:
         if password == PASSWORD:
             st.session_state["authenticated"] = True
-            st.experimental_rerun()  # Immediately rerun the app to bypass the login screen
+            st.rerun()  # Immediately rerun the app to bypass the login screen
         else:
             st.error("Incorrect password. Please try again.")
 else:
