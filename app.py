@@ -92,7 +92,7 @@ with tab1:
             crosstab_result = crosstab_result
 
         # Display the crosstab with increased size
-        st.write("Crosstab Result:")
+        st.write(f"Crosstab Result: '{column2}'")
         st.dataframe(crosstab_result, use_container_width=True, height=calculated_height)
         
 # Create the second tab for displaying user comments

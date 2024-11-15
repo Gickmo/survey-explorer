@@ -12,7 +12,6 @@ comments = [
     "What additional support or initiative would you like to see from the Guild in dealing with AI advancements?"
 ]
 
-
 allowed_columns = [
     "Language",
     "Primary Job",
@@ -50,6 +49,5 @@ allowed_columns = [
     "Ensuring that members are still properly compensated even when creating work assisted by Generative AI",
     "Receiving compensation for use of production images being entered into a learning model for a Generative AI system (either public or private/studio-owned)",
     "Production training on specific AI tools, relevant to your department and work category",
-    "What additional support or initiative would you like to see from the Guild in dealing with AI advancements?",
     "Did you work during the last 12 months?"
 ]
