@@ -40,13 +40,6 @@ with tab1:
         key="selectbox_column2"
     )
 
-    # Optional button to flip columns
-    if st.button("Flip Crosstab Columns", key="flip_button"):
-        # Swap the selected columns
-        st.session_state["column1"], st.session_state["column2"] = st.session_state["column2"], st.session_state["column1"]
-        column1 = st.session_state["column1"]
-        column2 = st.session_state["column2"]
-
     # Filter out NaN values from the unique values of column1
     column1_values = df[column1].dropna().unique()
     column1_values = st.multiselect(
