@@ -53,10 +53,17 @@ translations = {
     "L'IA générative peut parfois aider.": 'Generative AI can help sometimes',
 }
 
-df = pd.read_excel('data/AI-Survey-Results-tr.xlsx')
+df = pd.read_excel('data/AI-Survey-Results-tr-Tools-Tasks-Complete.xlsx')
 df.replace(translations, inplace=True)
 df_tr = df
 df_tr.to_excel('data/AI-Survey-Results-tr.xlsx')
+
+bins = [17, 24, 34, 44, 54, 64, 74, 100]
+brackets = ['18-24', '25-34', '35-44', '45-54', '55-64', '64-75', '75+']
+
+df['FM_Age'] = pd.cut(df['FM_Age'], bins=bins, labels=brackets)
+
+df.to_excel('data/AI-Survey-Results-tr-Tools-Tasks-Complete.xlsx')
 
 # Creating income bracket column
 df = pd.read_excel('/Users/gbeltrami/Desktop/Work/Code/AI-Survey-Results-tr.xlsx')
