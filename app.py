@@ -21,22 +21,22 @@ tab1, tab2, tab3 = st.tabs(["Crosstab Generator", "User Comments", "Tasks, Tools
 with tab1:
     # Initialize session state to keep track of selected columns
     if "column1" not in st.session_state:
-        st.session_state["column1"] = df.columns[2]
+        st.session_state["column1"] = df.columns[1]
     if "column2" not in st.session_state:
-        st.session_state["column2"] = df.columns[12]
+        st.session_state["column2"] = df.columns[10]
 
     # Dropdowns to select columns for the crosstab with default selections
     column1 = st.selectbox(
         "Select the first column",
         allowed_columns,  # Use the list of allowed columns here
-        index=allowed_columns.index(st.session_state["column1"]) if st.session_state["column1"] in allowed_columns else 2,
+        index=allowed_columns.index(st.session_state["column1"]) if st.session_state["column1"] in allowed_columns else 1,
         key="selectbox_column1"
     )
 
     column2 = st.selectbox(
         "Select the second column",
         allowed_columns,  # Use the list of allowed columns here
-        index=allowed_columns.index(st.session_state["column2"]) if st.session_state["column2"] in allowed_columns else 12,
+        index=allowed_columns.index(st.session_state["column2"]) if st.session_state["column2"] in allowed_columns else 10,
         key="selectbox_column2"
     )
 
