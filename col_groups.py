@@ -30,7 +30,7 @@ allowed_columns = [
     "When you use AI or Generative AI in your work, you do it:",
     "Have you received a brief or concept material (ex: drawing) for a production from a director or producer that might have been created using a Generative AI?",
     "Have you ever formally proposed the integration of AI (such as Generative AI or other tools) into your workflow to colleagues or supervisors?",
-    "Have you been asked to allow your artistic or creative work to be used to train a company’s Generative AI?",
+    "Have you been asked to allow your artistic or  creative work to be used to train a company’s Generative AI?",
     "Have you observed a reduction in work opportunities due to AI automation in your field?",
     "Are you concerned about the possibility of a reduction in work opportunities due to AI automation in your field within 1 to 5 years?",
     "In your opinion, does Generative AI complement or augment your role?",
