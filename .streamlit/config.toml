@@ -1,0 +1,11 @@
+[ui]
+hideTopBar = true
+
+[runner]
+# Controls script execution
+fastReruns = true 
+
+[client]
+# Client-side settings
+toolbarMode = "minimal"  # Options: "minimal" or "normal"
+showErrorDetails = false 
