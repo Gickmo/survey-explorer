@@ -17,7 +17,6 @@ allowed_columns = [
     "Primary Job",
     "Secondary Job",
     "District Council",
-    "Ethnicity-Broad",
     "FM_Primary_Job",
     "FM_Secondary_Job",
     "FM_Sex",
